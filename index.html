@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>URBAN KITCHEN — Restaurant</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+    
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+    <!-- ============================================================ -->
+    <!-- SPLASH / LANDING PAGE - SLIDING EMERALD & BURNT ORANGE -->
+    <!-- ============================================================ -->
+    <section class="splash-page" id="splashPage">
+        <div class="splash-overlay"></div>
+        <div class="splash-container">
+            <div class="splash-content">
+                <div class="splash-left">
+                    <div class="splash-brand">
+                        <span class="splash-logo">🍽️</span>
+                        <h1 class="splash-brand-name">URBAN KITCHEN</h1>
+                    </div>
+                    <div class="splash-slider">
+                        <div class="splash-slide active">
+                            <span class="splash-badge">🍽️ Premium Dining</span>
+                            <h2 class="splash-title">Are You <span>Hungry?</span></h2>
+                            <p class="splash-desc">
+                                Don't wait! Let's start to order food from <strong>URBAN KITCHEN</strong>.
+                                Fresh, delicious, and made with love.
+                            </p>
+                        </div>
+                        <div class="splash-slide">
+                            <span class="splash-badge">🌿 Fresh & Tasty</span>
+                            <h2 class="splash-title">100% <span>Natural</span></h2>
+                            <p class="splash-desc">
+                                We use only the freshest ingredients sourced from local farms.
+                                Quality you can taste in every bite.
+                            </p>
+                        </div>
+                        <div class="splash-slide">
+                            <span class="splash-badge">👨‍🍳 Expert Chefs</span>
+                            <h2 class="splash-title">Crafted with <span>Passion</span></h2>
+                            <p class="splash-desc">
+                                Our Michelin-trained chefs bring world-class flavors 
+                                to your table with love and dedication.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="splash-dots">
+                        <span class="dot active" data-slide="0"></span>
+                        <span class="dot" data-slide="1"></span>
+                        <span class="dot" data-slide="2"></span>
+                    </div>
+                    <a href="#home" class="btn btn-primary splash-btn" id="enterBtn">
+                        <i class="fas fa-utensils"></i> Check Out Menu
+                    </a>
+                </div>
+                <div class="splash-right">
+                    <div class="splash-image-wrapper">
+                        <img 
+                            src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=600&h=500&fit=crop&auto=format" 
+                            alt="Delicious food platter" 
+                            class="splash-image"
+                        />
+                        <div class="splash-float-badge">
+                            <span>🔥</span>
+                            <div>
+                                <strong>Fresh & Tasty</strong>
+                                <span>Made with love</span>
+                            </div>
+                        </div>
+                        <div class="splash-float-badge2">
+                            <span>⭐</span>
+                            <div>
+                                <strong>4.8 Rating</strong>
+                                <span>500+ reviews</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================ -->
+    <!-- NAVIGATION -->
+    <!-- ============================================================ -->
+    <header class="header" role="banner" id="mainHeader">
+        <nav class="nav container" role="navigation" aria-label="Main navigation">
+            <div class="nav-brand">
+                <span class="nav-logo">🍽️</span>
+                <span class="nav-name">URBAN KITCHEN</span>
+            </div>
+
+            <ul class="nav-links" id="navLinks" role="menubar">
+                <li role="none"><a href="#home" role="menuitem">Home</a></li>
+                <li role="none"><a href="#menu" role="menuitem">Menu</a></li>
+                <li role="none"><a href="#about" role="menuitem">About</a></li>
+                <li role="none"><a href="#contact" role="menuitem">Contact</a></li>
+            </ul>
+
+            <div class="nav-actions">
+                <button class="nav-search-btn" aria-label="Search menu" id="searchToggle">
+                    <i class="fas fa-search"></i>
+                </button>
+                <button class="nav-cart-btn" aria-label="Open cart" id="cartToggle">
+                    <i class="fas fa-shopping-bag"></i>
+                    <span class="cart-badge" id="cartBadge">0</span>
+                </button>
+                <button class="nav-hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </nav>
+
+        <!-- Mobile Search -->
+        <div class="mobile-search" id="mobileSearch">
+            <input type="text" placeholder="Search menu..." id="searchInput" aria-label="Search menu items" />
+        </div>
+    </header>
+
+    <!-- ============================================================ -->
+    <!-- HERO SECTION -->
+    <!-- ============================================================ -->
+    <section class="hero" id="home">
+        <div class="hero-container container">
+            <div class="hero-content">
+                <span class="hero-badge">✨ Fresh • Delicious • Made Daily</span>
+                <h1 class="hero-title">Taste the <span>Extraordinary</span></h1>
+                <p class="hero-desc">
+                    Crafted with passion, served with love. Experience authentic 
+                    flavors in an atmosphere of timeless elegance.
+                </p>
+                <div class="hero-actions">
+                    <a href="#menu" class="btn btn-primary hero-btn" id="exploreMenuBtn">
+                        <i class="fas fa-utensils"></i> Explore Menu
+                    </a>
+                    <a href="#specials" class="btn btn-secondary hero-btn" id="viewSpecialsBtn">
+                        <i class="fas fa-star"></i> View Specials
+                    </a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="hero-image-wrapper">
+                    <img 
+                        src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600&h=500&fit=crop&auto=format" 
+                        alt="Delicious restaurant food platter" 
+                        loading="lazy"
+                        class="hero-image"
+                    />
+                    <div class="hero-float-card">
+                        <div class="float-item">
+                            <span class="float-icon">⭐</span>
+                            <div>
+                                <strong>4.8</strong>
+                                <span>Rating</span>
+                            </div>
+                        </div>
+                        <div class="float-item">
+                            <span class="float-icon">🌿</span>
+                            <div>
+                                <strong>Fresh</strong>
+                                <span>Ingredients</span>
+                            </div>
+                        </div>
+                        <div class="float-item">
+                            <span class="float-icon">⏱️</span>
+                            <div>
+                                <strong>Fast</strong>
+                                <span>Service</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================ -->
+    <!-- MENU SECTION -->
+    <!-- ============================================================ -->
+    <section class="menu-section" id="menu">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Our Menu</span>
+                <h2 class="section-title">Explore Our <span>Dishes</span></h2>
+                <p class="section-desc">
+                    From classic favorites to chef's specials — every plate tells a story.
+                </p>
+            </div>
+
+            <!-- Menu Controls -->
+            <div class="menu-controls">
+                <div class="menu-categories" id="categoryFilters" role="tablist">
+                    <button class="cat-btn active" data-category="all" role="tab">All</button>
+                    <button class="cat-btn" data-category="Starters" role="tab">Starters</button>
+                    <button class="cat-btn" data-category="Main Course" role="tab">Main</button>
+                    <button class="cat-btn" data-category="Pizza" role="tab">Pizza</button>
+                    <button class="cat-btn" data-category="Burgers" role="tab">Burgers</button>
+                    <button class="cat-btn" data-category="Pasta" role="tab">Pasta</button>
+                    <button class="cat-btn" data-category="Desserts" role="tab">Desserts</button>
+                    <button class="cat-btn" data-category="Drinks" role="tab">Drinks</button>
+                </div>
+                <div class="menu-utils">
+                    <div class="search-wrapper">
+                        <input 
+                            type="text" 
+                            id="menuSearch" 
+                            placeholder="Search dishes..." 
+                            aria-label="Search menu"
+                        />
+                        <i class="fas fa-search search-icon"></i>
+                    </div>
+                    <select id="sortSelect" aria-label="Sort menu">
+                        <option value="recommended">Recommended</option>
+                        <option value="price-low">Price: Low → High</option>
+                        <option value="price-high">Price: High → Low</option>
+                        <option value="rating">Rating</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Menu Grid -->
+            <div class="menu-grid" id="menuGrid" role="list">
+                <!-- Rendered by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================ -->
+    <!-- SPECIAL OFFERS -->
+    <!-- ============================================================ -->
+    <section class="specials" id="specials">
+        <div class="container">
+            <div class="specials-wrapper">
+                <div class="specials-content">
+                    <span class="section-tag">Chef's Special</span>
+                    <h2 class="specials-title">20% OFF <span>Selected Dishes</span></h2>
+                    <p class="specials-desc">
+                        Indulge in our handcrafted specialties, made with the 
+                        finest seasonal ingredients. Available for a limited time.
+                    </p>
+                    <a href="#menu" class="btn btn-primary">View Specials</a>
+                </div>
+                <div class="specials-image">
+                    <img 
+                        src="https://images.unsplash.com/photo-1551218808-94e220e084d2?w=500&h=400&fit=crop&auto=format" 
+                        alt="Chef's special dish" 
+                        loading="lazy"
+                    />
+                    <div class="specials-badge">-20%</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================ -->
+    <!-- ABOUT SECTION -->
+    <!-- ============================================================ -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about-wrapper">
+                <div class="about-image">
+                    <img 
+                        src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=500&h=500&fit=crop&auto=format" 
+                        alt="Restaurant interior" 
+                        loading="lazy"
+                    />
+                </div>
+                <div class="about-content">
+                    <span class="section-tag">About Us</span>
+                    <h2 class="section-title">A Story of <span>Flavor &amp; Passion</span></h2>
+                    <p>
+                        Founded in 2015, URBAN KITCHEN has been crafting memorable 
+                        dining experiences with a commitment to quality, creativity, 
+                        and warmth.
+                    </p>
+                    <ul class="about-features">
+                        <li><i class="fas fa-leaf"></i> <span>100% fresh, locally-sourced ingredients</span></li>
+                        <li><i class="fas fa-user-chef"></i> <span>Michelin-trained executive chefs</span></li>
+                        <li><i class="fas fa-star"></i> <span>4.8/5 average customer satisfaction</span></li>
+                    </ul>
+                    <a href="#contact" class="btn btn-primary">Get in Touch</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================ -->
+    <!-- WHY CHOOSE US -->
+    <!-- ============================================================ -->
+    <section class="features" id="features">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Why Choose Us</span>
+                <h2 class="section-title">Excellence in <span>Every Detail</span></h2>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <span class="feature-icon">🌿</span>
+                    <h3>Fresh Ingredients</h3>
+                    <p>Farm-to-table sourcing ensures peak flavor in every dish.</p>
+                </div>
+                <div class="feature-card">
+                    <span class="feature-icon">👨‍🍳</span>
+                    <h3>Expert Chefs</h3>
+                    <p>Our culinary team brings years of world-class experience.</p>
+                </div>
+                <div class="feature-card">
+                    <span class="feature-icon">⏱️</span>
+                    <h3>Fast Service</h3>
+                    <p>Prompt, attentive service without compromising quality.</p>
+                </div>
+                <div class="feature-card">
+                    <span class="feature-icon">🏆</span>
+                    <h3>Quality Guaranteed</h3>
+                    <p>Every plate meets our rigorous quality standards.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================ -->
+    <!-- TESTIMONIALS -->
+    <!-- ============================================================ -->
+    <section class="testimonials" id="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Testimonials</span>
+                <h2 class="section-title">What Our <span>Guests Say</span></h2>
+            </div>
+            <div class="testimonials-grid">
+                <article class="testimonial-card">
+                    <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+                    <p class="testimonial-text">
+                        "An unforgettable dining experience. The flavors are 
+                        bold, the service impeccable, and the ambiance is pure magic."
+                    </p>
+                    <div class="testimonial-author">
+                        <span class="testimonial-avatar">👩</span>
+                        <div>
+                            <strong>Sarah Johnson</strong>
+                            <span>Food Enthusiast</span>
+                        </div>
+                    </div>
+                </article>
+                <article class="testimonial-card">
+                    <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+                    <p class="testimonial-text">
+                        "URBAN KITCHEN is my go-to for special occasions. The 
+                        attention to detail and quality of ingredients is unmatched."
+                    </p>
+                    <div class="testimonial-author">
+                        <span class="testimonial-avatar">👨</span>
+                        <div>
+                            <strong>Michael Chen</strong>
+                            <span>Regular Guest</span>
+                        </div>
+                    </div>
+                </article>
+                <article class="testimonial-card">
+                    <div class="testimonial-stars">⭐⭐⭐⭐</div>
+                    <p class="testimonial-text">
+                        "Amazing food, lovely atmosphere, and the staff really 
+                        know how to make you feel welcome. Highly recommend!"
+                    </p>
+                    <div class="testimonial-author">
+                        <span class="testimonial-avatar">👩</span>
+                        <div>
+                            <strong>Emily Rodriguez</strong>
+                            <span>First-time Guest</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================ -->
+    <!-- CONTACT SECTION -->
+    <!-- ============================================================ -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <span class="section-tag">Contact</span>
+                    <h2 class="section-title">Get in <span>Touch</span></h2>
+                    <ul class="contact-details">
+                        <li>
+                            <span class="contact-icon"><i class="fas fa-location-dot"></i></span>
+                            <div>
+                                <strong>Address</strong>
+                                <span>Davangere, Karnataka 577224</span>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="contact-icon"><i class="fas fa-phone"></i></span>
+                            <div>
+                                <strong>Phone</strong>
+                                <span><a href="tel:+919980992793">+91 99809 92793</a></span>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="contact-icon"><i class="fas fa-envelope"></i></span>
+                            <div>
+                                <strong>Email</strong>
+                                <span><a href="mailto:gowribg2006@gmail.com">gowribg2006@gmail.com</a></span>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="contact-icon"><i class="fas fa-clock"></i></span>
+                            <div>
+                                <strong>Opening Hours</strong>
+                                <span>Mon–Sun: 11:00 AM – 11:00 PM</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <form class="contact-form" id="contactForm" novalidate>
+                    <div class="form-group">
+                        <label for="formName">Name</label>
+                        <input type="text" id="formName" placeholder="Your name" required />
+                        <span class="form-error"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="formEmail">Email</label>
+                        <input type="email" id="formEmail" placeholder="you@example.com" required />
+                        <span class="form-error"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="formMessage">Message</label>
+                        <textarea id="formMessage" rows="4" placeholder="Your message..." required></textarea>
+                        <span class="form-error"></span>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================ -->
+    <!-- FOOTER -->
+    <!-- ============================================================ -->
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <span class="footer-logo">🍽️ URBAN KITCHEN</span>
+                    <p>
+                        Where exceptional food meets timeless elegance. 
+                        Crafting memorable dining experiences since 2015.
+                    </p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#menu">Menu</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contact</h4>
+                    <p>Davangere, Karnataka 577224</p>
+                    <p><a href="tel:+919980992793">+91 99809 92793</a></p>
+                    <p><a href="mailto:gowribg2006@gmail.com">gowribg2006@gmail.com</a></p>
+                </div>
+                <div class="footer-social">
+                    <h4>Follow Us</h4>
+                    <div class="social-icons">
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 URBAN KITCHEN. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ============================================================ -->
+    <!-- CART DRAWER -->
+    <!-- ============================================================ -->
+    <aside class="cart-drawer" id="cartDrawer" role="dialog" aria-modal="true" aria-label="Shopping cart">
+        <div class="cart-overlay" id="cartOverlay"></div>
+        <div class="cart-panel">
+            <div class="cart-header">
+                <h3><i class="fas fa-shopping-bag"></i> Your Cart</h3>
+                <button class="cart-close" id="cartClose" aria-label="Close cart"><i class="fas fa-times"></i></button>
+            </div>
+            <div class="cart-body" id="cartBody">
+                <!-- Rendered by JavaScript -->
+            </div>
+            <div class="cart-footer" id="cartFooter">
+                <div class="cart-total">
+                    <span>Subtotal</span>
+                    <span id="cartSubtotal">₹0</span>
+                </div>
+                
+                <!-- Payment Options -->
+                <div class="payment-options">
+                    <p class="payment-label">💳 Select Payment Method</p>
+                    <div class="payment-icons">
+                        <span class="payment-icon" data-method="phonepay" title="PhonePe">
+                            <i class="fas fa-mobile-alt"></i> PhonePe
+                        </span>
+                        <span class="payment-icon" data-method="gpay" title="Google Pay">
+                            <i class="fab fa-google"></i> GPay
+                        </span>
+                        <span class="payment-icon" data-method="paytm" title="Paytm">
+                            <i class="fas fa-wallet"></i> Paytm
+                        </span>
+                        <span class="payment-icon" data-method="card" title="Credit/Debit Card">
+                            <i class="fas fa-credit-card"></i> Card
+                        </span>
+                        <span class="payment-icon" data-method="cash" title="Cash">
+                            <i class="fas fa-money-bill-wave"></i> Cash
+                        </span>
+                        <span class="payment-icon" data-method="upi" title="UPI">
+                            <i class="fas fa-qrcode"></i> UPI
+                        </span>
+                    </div>
+                    <p class="payment-note" id="paymentStatus">🔒 Select a payment method to proceed</p>
+                </div>
+
+                <!-- Payment Modal -->
+                <div class="payment-modal" id="paymentModal">
+                    <div class="payment-modal-content">
+                        <div class="payment-modal-header">
+                            <span id="paymentMethodIcon">💳</span>
+                            <h4 id="paymentMethodName">Payment</h4>
+                        </div>
+                        <div class="payment-modal-body">
+                            <div class="payment-amount">
+                                <span>Amount to Pay</span>
+                                <strong id="paymentAmount">₹0</strong>
+                            </div>
+                            <div class="payment-progress" id="paymentProgress">
+                                <div class="progress-bar">
+                                    <div class="progress-fill" id="progressBar"></div>
+                                </div>
+                                <span class="progress-text" id="progressText">Initializing...</span>
+                            </div>
+                            <div class="payment-status" id="paymentStatusDetail">
+                                <i class="fas fa-spinner fa-spin"></i>
+                                <span>Processing your payment...</span>
+                            </div>
+                        </div>
+                        <div class="payment-modal-footer">
+                            <button class="btn btn-secondary" id="cancelPayment">Cancel</button>
+                            <button class="btn btn-primary" id="confirmPayment">
+                                <i class="fas fa-check"></i> Confirm Payment
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="btn btn-primary btn-full" id="checkoutBtn">
+                    <i class="fas fa-check"></i> Place Order
+                </button>
+                <button class="btn btn-secondary btn-full" id="clearCartBtn">
+                    <i class="fas fa-trash"></i> Clear Cart
+                </button>
+            </div>
+        </div>
+    </aside>
+
+    <!-- ============================================================ -->
+    <!-- TOAST CONTAINER -->
+    <!-- ============================================================ -->
+    <div class="toast-container" id="toastContainer" role="status" aria-live="polite"></div>
+
+    <!-- ============================================================ -->
+    <!-- JAVASCRIPT -->
+    <!-- ============================================================ -->
+    <script src="script.js"></script>
+</body>
+</html>
